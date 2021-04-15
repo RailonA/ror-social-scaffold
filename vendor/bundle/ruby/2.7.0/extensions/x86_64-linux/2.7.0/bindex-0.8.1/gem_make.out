@@ -1,0 +1,15 @@
+current directory: /home/railon/Projects/Odin_On_Rails/stay-in-touch/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/home/railon/.rbenv/versions/2.7.0/bin/ruby -I /home/railon/.rbenv/versions/2.7.0/lib/ruby/site_ruby/2.7.0 -r ./siteconf20210415-15499-kxm5q5.rb extconf.rb
+creating Makefile
+
+current directory: /home/railon/Projects/Odin_On_Rails/stay-in-touch/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /home/railon/Projects/Odin_On_Rails/stay-in-touch/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/railon/Projects/Odin_On_Rails/stay-in-touch/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20210415-15499-6dm71d/skiptrace/internal
