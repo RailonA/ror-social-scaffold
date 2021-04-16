@@ -1,5 +1,31 @@
 <section class="users-section">
   <ul class="users-list">
-    <%= render @users %>
+    <% @users.each do |user| %>
+      <li>
+        Name: <%= user.name %>
+        <span class="profile-link">
+          <%= link_to 'See Profile',  user_path(user), class: 'profile-link' %>
+        </span>
+
+       
+        <% if current_user.friend_invites(user) %>
+            <button  class = "pending"> Pending Invitation </button>
+          <% elsif current_user.receive_invitation(user)%>
+          <button  class = "accept"> <%= link_to 'Accept', accept_invite_path(user_id: user.id) %> </button>
+        <button class = "decline"> <%= link_to 'Decline', reject_invite_path(user_id: user.id), method: :delete, class:"btn btn-danger" %></button>
+          <% elsif !current_user.friend?(user) && current_user.id != user.id %>
+            <button class = "add_friend"><%= link_to 'Add Friend', send_request_path(user_id: user.id) , class:"btn btn-success" %></button>
+              <% elsif current_user.friend?(user) %>
+            <button class = "decline"><%= link_to 'Remove friend', remove_friend_path(user_id: user.id), method: :delete, data: {confirm: "Are you sure you want to remove friend?"}, class: "btn btn-danger" %> </button>
+           <% end %>
+
+
+
+
+
+
+
+      </li>
+    <% end %>
   </ul>
 </section>
