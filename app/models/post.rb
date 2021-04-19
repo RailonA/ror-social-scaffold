@@ -1,3 +1,6 @@
+
+# rubocop:disable Style/Documentation
+# rubocop:disable Layout/LineLength
 # frozen_string_literal: true
 
 class Post < ApplicationRecord
@@ -10,3 +13,5 @@ class Post < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
 end
+# rubocop:enable Style/Documentation
+# rubocop:enable Layout/LineLength
