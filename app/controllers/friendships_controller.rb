@@ -1,6 +1,3 @@
-# rubocop:disable Style/Documentation
-# frozen_string_literal: true
-
 class FriendshipsController < ApplicationController
   def index
     @friendship = Friendship.all
@@ -49,4 +46,3 @@ class FriendshipsController < ApplicationController
     redirect_to users_path
   end
 end
-# rubocop:enable Style/Documentation

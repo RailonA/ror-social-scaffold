@@ -1,6 +1,3 @@
-# rubocop:disable Style/Documentation
-# frozen_string_literal: true
-
 class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
@@ -20,4 +17,3 @@ class CommentsController < ApplicationController
     params.require(:comment).permit(:content)
   end
 end
-# rubocop:enable Style/Documentation

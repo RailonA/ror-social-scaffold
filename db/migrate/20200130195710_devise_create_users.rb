@@ -1,6 +1,3 @@
-# rubocop:disable Style/Documentation
-# frozen_string_literal: true
-
 class DeviseCreateUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :users do |t|
@@ -42,4 +39,3 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
     # add_index :users, :unlock_token,         unique: true
   end
 end
-# rubocop:enable Style/Documentation
