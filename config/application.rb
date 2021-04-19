@@ -1,3 +1,6 @@
+# rubocop:disable Style/Documentation
+# frozen_string_literal: true
+
 require_relative 'boot'
 
 require 'rails'
@@ -31,3 +34,4 @@ module RorSocialScaffold
     config.generators.system_tests = nil
   end
 end
+# rubocop:enable Style/Documentation

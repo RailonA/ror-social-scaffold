@@ -1,6 +1,5 @@
-
-AllCops:
-      NewCops: enable
+ AllCops:
+    NewCops: enable
 
 Gemspec/DateAssignment: # (new in 1.10)
   Enabled: true
@@ -88,7 +87,7 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  IgnoredMethods: ["describe"]
+  ExcludedMethods: ["describe"]
   Max: 30
 
 Style/Documentation:
