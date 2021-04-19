@@ -7,6 +7,9 @@ ruby '2.7.2'
 gem 'rails', '~> 6.1.3'
 # rubocop
 gem 'rubocop', '~>0.81.0'
+gem 'rubocop-performance'
+gem 'rubocop-rails'
+gem 'rubocop-rspec'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
