@@ -1,4 +1,6 @@
 # rubocop:disable Style/Documentation
+# rubocop:disable Layout/LineLength
+
 # frozen_string_literal: true
 
 module ApplicationHelper
@@ -20,3 +22,4 @@ module ApplicationHelper
   end
 end
 # rubocop:enable Style/Documentation
+# rubocop:enable  Layout/LineLength

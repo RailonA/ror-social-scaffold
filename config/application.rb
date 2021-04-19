@@ -1,4 +1,5 @@
 # rubocop:disable Style/Documentation
+# rubocop:disable  Layout/LineLength
 # frozen_string_literal: true
 
 require_relative 'boot'
@@ -35,3 +36,4 @@ module RorSocialScaffold
   end
 end
 # rubocop:enable Style/Documentation
+# rubocop:enable  Layout/LineLength

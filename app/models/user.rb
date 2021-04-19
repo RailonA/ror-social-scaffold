@@ -1,5 +1,7 @@
 # rubocop:disable Style/GuardClause
 # rubocop:disable Style/Documentation
+# rubocop:disable  Layout/LineLength
+# rubocop:disable  Style/IfUnlessModifier
 # frozen_string_literal: true
 
 class User < ApplicationRecord
@@ -68,3 +70,5 @@ class User < ApplicationRecord
 end
 # rubocop:enable Style/Documentation
 # rubocop:enable Style/GuardClause
+# rubocop:enable  Layout/LineLength
+# rubocop:enable  Style/IfUnlessModifier
