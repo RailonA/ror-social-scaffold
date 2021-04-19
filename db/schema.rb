@@ -1,4 +1,6 @@
 # rubocop:disable Metrics/BlockLength
+# rubocop:disable Layout/LineLength
+
 # frozen_string_literal: true
 
 # This file is auto-generated from the current state of the database. Instead
@@ -69,3 +71,4 @@ ActiveRecord::Schema.define(version: 20_210_416_161_748) do
   add_foreign_key 'friendships', 'users'
 end
 # rubocop:enable Metrics/BlockLength
+# rubocop:enable Layout/LineLength
