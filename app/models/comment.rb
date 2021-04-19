@@ -1,7 +1,4 @@
 # rubocop:disable Style/Documentation
-# rubocop:disable Layout/LineLength
-
-
 # frozen_string_literal: true
 
 class Comment < ApplicationRecord
@@ -12,4 +9,3 @@ class Comment < ApplicationRecord
   belongs_to :post
 end
 # rubocop:enable Style/Documentation
-# rubocop:disable Layout/LineLength

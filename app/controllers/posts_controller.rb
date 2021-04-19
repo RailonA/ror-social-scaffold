@@ -1,6 +1,5 @@
 # rubocop:disable Style/Documentation
 # rubocop:disable Layout/LineLength
-
 # frozen_string_literal: true
 
 class PostsController < ApplicationController
@@ -34,4 +33,3 @@ class PostsController < ApplicationController
 end
 # rubocop:enable Style/Documentation
 # rubocop:enable Layout/LineLength
-

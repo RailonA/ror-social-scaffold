@@ -1,4 +1,3 @@
-# rubocop:disable Style/Documentation
 # rubocop:disable Style/GuardClause
 # rubocop:disable Layout/LineLength
 
