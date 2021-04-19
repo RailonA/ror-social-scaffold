@@ -1,4 +1,5 @@
 # rubocop:disable Style/Documentation
+# rubocop:disable  Layout/LineLength
 # frozen_string_literal: true
 
 class DeviseCreateUsers < ActiveRecord::Migration[5.2]
@@ -43,3 +44,4 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
   end
 end
 # rubocop:enable Style/Documentation
+# rubocop:enable  Layout/LineLength

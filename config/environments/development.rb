@@ -1,3 +1,4 @@
+# rubocop:disable  Layout/LineLength
 # frozen_string_literal: true
 
 Rails.application.configure do
@@ -66,3 +67,4 @@ Rails.application.configure do
   # Devise auth config
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
+# rubocop:enable  Layout/LineLength

@@ -1,3 +1,4 @@
+# rubocop:disable  Layout/LineLength
 # frozen_string_literal: true
 
 # Be sure to restart your server when you modify this file.
@@ -14,3 +15,4 @@ end
 # ActiveSupport.on_load(:active_record) do
 #   self.include_root_in_json = true
 # end
+# rubocop:enable  Layout/LineLength
