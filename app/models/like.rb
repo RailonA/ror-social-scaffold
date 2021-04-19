@@ -1,4 +1,3 @@
-# rubocop:disable Style/Documentation
 # frozen_string_literal: true
 
 class Like < ApplicationRecord
@@ -7,4 +6,3 @@ class Like < ApplicationRecord
   belongs_to :user
   belongs_to :post
 end
-# rubocop:enable Style/Documentation

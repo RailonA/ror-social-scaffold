@@ -1,6 +1,5 @@
 # rubocop:disable Style/GuardClause
-# rubocop:disable Layout/LineLength
-
+# rubocop:disable Style/Documentation
 
 # frozen_string_literal: true
 
@@ -65,6 +64,8 @@ class User < ApplicationRecord
   end
 
   def friend?(user)
-    friends.indisableble Style/Documentation
+    friends.include?(user)
+  end
+end
 # rubocop:enable Style/GuardClause
-# rubocop:enable Layout/LineLength
+# rubocop:enable Style/Documentation
