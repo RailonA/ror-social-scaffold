@@ -1,3 +1,8 @@
+# rubocop:disable Style/Documentation
+# rubocop:disable Style/GuardClause
+
+# frozen_string_literal: true
+
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
@@ -62,3 +67,5 @@ class User < ApplicationRecord
     friends.include?(user)
   end
 end
+# rubocop:enable Style/Documentation
+# rubocop:enable Style/GuardClause

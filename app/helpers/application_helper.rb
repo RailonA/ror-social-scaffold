@@ -1,3 +1,6 @@
+# rubocop:disable Style/Documentation
+# frozen_string_literal: true
+
 module ApplicationHelper
   def menu_link_to(link_text, link_path)
     class_name = current_page?(link_path) ? 'menu-item active' : 'menu-item'
@@ -16,3 +19,4 @@ module ApplicationHelper
     end
   end
 end
+# rubocop:enable Style/Documentation
