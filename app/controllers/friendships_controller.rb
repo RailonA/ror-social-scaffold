@@ -1,8 +1,8 @@
+# frozen_string_literal: true
 # rubocop:disable Style/Documentation
 # rubocop:disable Layout/LineLength
 # rubocop:disable Metrics/AbcSize
 # rubocop:disable Lint/RedundantCopDisableDirective
-# frozen_string_literal: true
 
 class FriendshipsController < ApplicationController
   def index

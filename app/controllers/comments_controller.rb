@@ -1,6 +1,6 @@
+# frozen_string_literal: true
 # rubocop:disable Style/Documentation
 # rubocop:disable Layout/LineLength
-# frozen_string_literal: true
 
 class CommentsController < ApplicationController
   def create

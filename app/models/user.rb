@@ -1,9 +1,9 @@
+# frozen_string_literal: true
 # rubocop:disable Style/GuardClause
 # rubocop:disable Style/Documentation
 # rubocop:disable Layout/LineLength
 # rubocop:disable Style/FrozenStringLiteralComment
 # rubocop:disable Lint/RedundantCopDisableDirective
-# frozen_string_literal: true
 
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
