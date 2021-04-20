@@ -1,8 +1,6 @@
-# frozen_string_literal: true
-
 # rubocop:disable Style/Documentation
-
 # rubocop:disable Layout/LineLength
+# frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception

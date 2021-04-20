@@ -1,7 +1,6 @@
-# frozen_string_literal: true
-
 # rubocop:disable Style/Documentation
 # rubocop:disable  Layout/LineLength
+# frozen_string_literal: true
 
 class Post < ApplicationRecord
   validates :content, presence: true, length: { maximum: 1000,
