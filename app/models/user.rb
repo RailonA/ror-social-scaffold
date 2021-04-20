@@ -5,6 +5,7 @@
 # rubocop:disable Style/Documentation
 
 # rubocop:disable Layout/LineLength
+
 # rubocop:disable Lint/RedundantCopDisableDirective
 
 class User < ApplicationRecord
