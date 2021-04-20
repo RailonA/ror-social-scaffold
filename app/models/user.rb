@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 # rubocop:disable Style/GuardClause
+
 # rubocop:disable Style/Documentation
+
 # rubocop:disable Layout/LineLength
 # rubocop:disable Lint/RedundantCopDisableDirective
 
@@ -71,4 +73,4 @@ end
 # rubocop:enable Style/GuardClause
 # rubocop:enable Style/Documentation
 # rubocop:enable Layout/LineLength
-# rubocop:enable
+# rubocop:enable Lint/RedundantCopDisableDirective
