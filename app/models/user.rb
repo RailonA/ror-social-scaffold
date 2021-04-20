@@ -1,7 +1,8 @@
 # rubocop:disable Style/GuardClause
 # rubocop:disable Style/Documentation
-# rubocop:disable  Layout/LineLength
+# rubocop:disable Layout/LineLength
 # rubocop:disable Style/FrozenStringLiteralComment
+# rubocop:disable SLint/RedundantCopDisableDirective
 # frozen_string_literal: true
 
 class User < ApplicationRecord
@@ -72,3 +73,4 @@ end
 # rubocop:enable Style/GuardClause
 # rubocop:enable  Layout/LineLength
 # rubocop:enable Style/FrozenStringLiteralComment
+# rubocop:enable SLint/RedundantCopDisableDirective
