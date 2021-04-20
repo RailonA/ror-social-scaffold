@@ -2,7 +2,7 @@
 # rubocop:disable Layout/LineLength
 # rubocop:disable Metrics/AbcSize
 # rubocop:disable Lint/RedundantCopDisableDirective
-
+# rubocop:disable Style/FrozenStringLiteralComment
 # frozen_string_literal: true
 
 class FriendshipsController < ApplicationController
@@ -57,3 +57,4 @@ end
 # rubocop:enable Layout/LineLength
 # rubocop:enable Metrics/AbcSize
 # rubocop:enable Lint/RedundantCopDisableDirective
+# rubocop:enable Style/FrozenStringLiteralComment
