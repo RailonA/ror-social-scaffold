@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# rubocop:disable Style/FrozenStringLiteralComment
-
 # rubocop:disable Style/Documentation
 
 # rubocop:disable Layout/LineLength
@@ -58,7 +56,6 @@ class FriendshipsController < ApplicationController
     redirect_to users_path
   end
 end
-# rubocop:enable Style/FrozenStringLiteralComment
 # rubocop:enable Style/Documentation
 # rubocop:enable Layout/LineLength
 # rubocop:enable Metrics/AbcSize
