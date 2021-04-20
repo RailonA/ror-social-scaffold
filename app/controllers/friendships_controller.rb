@@ -1,6 +1,7 @@
 # rubocop:disable Style/Documentation
 # rubocop:disable Layout/LineLength
 # rubocop:disable Metrics/AbcSize
+# rubocop:disable Style/FrozenStringLiteralComment
 
 # frozen_string_literal: true
 
@@ -55,3 +56,4 @@ end
 # rubocop:enable Style/Documentation
 # rubocop:enable Layout/LineLength
 # rubocop:enable Metrics/AbcSize
+# rubocop:enable Style/FrozenStringLiteralComment
