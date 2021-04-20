@@ -2,6 +2,7 @@
 
 # rubocop:disable Style/Documentation
 # rubocop:disable Layout/LineLength
+
 # rubocop:disable Metrics/AbcSize
 # rubocop:disable Lint/RedundantCopDisableDirective
 
