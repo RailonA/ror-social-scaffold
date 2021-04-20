@@ -69,6 +69,8 @@ class User < ApplicationRecord
     friends.include?(user)
   end
 end
-# rubocop:enable Style/Documentation
 # rubocop:enable Style/GuardClause
-# rubocop:enable  # rubocop:enable SLint/RedundantCopDisableDirective
+# rubocop:enable Style/Documentation
+# rubocop:enable Layout/LineLength
+# rubocop:enable Style/FrozenStringLiteralComment
+# rubocop:enable Lint/RedundantCopDisableDirective
