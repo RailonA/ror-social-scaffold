@@ -1,0 +1,8 @@
+<ul class = 'mb-4'>
+  <li class = 'green'>Name: <%= user.name%></li>
+  <span class="profile-link">
+    <li> <%= link_to 'See Profile',  user_path(user), class: '' %> </li>
+  </span>
+  <li> <%= render_friendship_btn user%> </li>
+</ul>
+<hr>

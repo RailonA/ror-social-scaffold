@@ -1,15 +1,13 @@
 
 <section class="user-section">
   <h2><%= "Name: #{@user.name}" %></h2>
+  <div>
+    <%= render_friendship_btn @user %>
+  </div>
   <article class="timeline">
-      <% if current_user.friend?(@user) || current_user == @user %>
-        <h3>Recent posts:</h3>
-        <ul class="posts">
-          <%= render @posts %>
-        </ul>
-        <%else%>
-        <h3>You need <button class = "add_friend"><%= link_to 'Add Friend', send_request_path(user_id: @user.id) , class:"btn btn-success" %></button> to view their posts</h3>
-      <%end%>
-
+    <h3>Recent posts:</h3>
+    <ul class="posts">
+      <%= render @posts %>
+    </ul>
   </article>
 </section>
