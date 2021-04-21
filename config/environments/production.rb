@@ -1,4 +1,3 @@
-# rubocop:disable  Layout/LineLength
 # frozen_string_literal: true
 
 Rails.application.configure do
@@ -97,4 +96,3 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
-# rubocop:enable  Layout/LineLength

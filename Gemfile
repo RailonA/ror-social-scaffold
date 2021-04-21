@@ -1,9 +1,7 @@
-# rubocop:disable Layout/LineLength
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
 
 ruby '2.7.2'
 
@@ -30,7 +28,6 @@ gem 'jbuilder', '~> 2.5'
 # Install wdm Gem if the platform is Windows
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -47,9 +44,8 @@ group :test do
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
   gem 'shoulda-matchers', '~> 4.0'
-
+  gem 'webdrivers'
 end
 
 group :development do

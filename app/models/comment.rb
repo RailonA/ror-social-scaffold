@@ -1,5 +1,3 @@
-# rubocop:disable  Layout/LineLength
-# rubocop:disable  Style/Documentation
 # frozen_string_literal: true
 
 class Comment < ApplicationRecord
@@ -9,5 +7,3 @@ class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :post
 end
-# rubocop:enable  Layout/LineLength
-# rubocop:enable  Style/Documentation

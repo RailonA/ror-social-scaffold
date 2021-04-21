@@ -1,4 +1,3 @@
-# rubocop:disable  Layout/LineLength
 # frozen_string_literal: true
 
 # Puma can serve each request in a thread from an internal thread pool.
@@ -38,4 +37,3 @@ pidfile ENV.fetch('PIDFILE', 'tmp/pids/server.pid')
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
-# rubocop:enable  Layout/LineLength

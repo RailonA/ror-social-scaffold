@@ -2,10 +2,6 @@
 
 # rubocop:disable Style/Documentation
 
-# rubocop:disable Layout/LineLength
-
-# rubocop:disable Metrics/AbcSize
-
 # rubocop:disable Lint/RedundantCopDisableDirective
 
 class FriendshipsController < ApplicationController
@@ -27,7 +23,7 @@ class FriendshipsController < ApplicationController
 
   def update
     @friendship = Friendship.find(params[:id])
-    redirect_to users_path if @friendship.confirmed == false and @friendship.accept_request
+    redirect_to users_path if (@friendship.confirmed == false) && @friendship.accept_request
   end
 
   def destroy
@@ -47,6 +43,4 @@ class FriendshipsController < ApplicationController
   end
 end
 # rubocop:enable Style/Documentation
-# rubocop:enable Layout/LineLength
-# rubocop:enable Metrics/AbcSize
 # rubocop:enable Lint/RedundantCopDisableDirective
