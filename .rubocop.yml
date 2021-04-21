@@ -1,3 +1,5 @@
+require: rubocop-performance
+
 AllCops:
     NewCops: enable
 
@@ -59,8 +61,7 @@ Style/RedundantArgument: # (new in 1.4)
   Enabled: true
 Style/StringChars: # (new in 1.12)
   Enabled: true
-Style/SwapValues: # (new in 1.1)
-  Enabled: true
+
 
   Exclude:
     - "db/**/*"
@@ -87,7 +88,7 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  ExcludedMethods: ["describe"]
+  IgnoredMethods: ["describe"]
   Max: 60
 
 Style/Documentation:
