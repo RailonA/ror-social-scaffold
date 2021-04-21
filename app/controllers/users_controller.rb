@@ -1,6 +1,3 @@
-# rubocop:disable Style/Documentation
-# frozen_string_literal: true
-
 class UsersController < ApplicationController
   before_action :authenticate_user!
 
@@ -13,4 +10,3 @@ class UsersController < ApplicationController
     @posts = @user.posts.ordered_by_most_recent
   end
 end
-# rubocop:enable Style/Documentation

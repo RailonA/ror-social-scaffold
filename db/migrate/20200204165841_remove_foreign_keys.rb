@@ -1,6 +1,3 @@
-# rubocop:disable Style/Documentation
-# frozen_string_literal: true
-
 class RemoveForeignKeys < ActiveRecord::Migration[5.2]
   def change
     remove_foreign_key :comments, :users
@@ -12,4 +9,3 @@ class RemoveForeignKeys < ActiveRecord::Migration[5.2]
     add_index :likes, :user_id
   end
 end
-# rubocop:enable Style/Documentation

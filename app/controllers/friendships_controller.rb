@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-# rubocop:disable Style/Documentation
-
 # rubocop:disable Lint/RedundantCopDisableDirective
 
 class FriendshipsController < ApplicationController
@@ -42,5 +38,4 @@ class FriendshipsController < ApplicationController
     current_user.already_friend?(User.find_by(id: params[:friendship][:friend_id]))
   end
 end
-# rubocop:enable Style/Documentation
 # rubocop:enable Lint/RedundantCopDisableDirective

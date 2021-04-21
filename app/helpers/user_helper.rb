@@ -1,8 +1,3 @@
-# rubocop:disable Style/Documentation
-# rubocop:disable Metrics/MethodLength
-# rubocop:disable Metrics/AbcSize
-# frozen_string_literal: true
-
 module UserHelper
   def render_friendship_btn(user)
     return if current_user == user
@@ -31,6 +26,3 @@ module UserHelper
 end
 
 def render_request_btn(user); end
-# rubocop:enable Style/Documentation
-# rubocop:enable Metrics/MethodLength
-# rubocop:enable Metrics/AbcSize

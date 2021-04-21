@@ -1,6 +1,3 @@
-# rubocop:disable Style/Documentation
-# frozen_string_literal: true
-
 class CreateLikes < ActiveRecord::Migration[5.2]
   def change
     create_table :likes do |t|
@@ -11,4 +8,3 @@ class CreateLikes < ActiveRecord::Migration[5.2]
     add_foreign_key :likes, :posts, column: :post_id
   end
 end
-# rubocop:enable Style/Documentation

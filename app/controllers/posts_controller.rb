@@ -1,6 +1,3 @@
-# rubocop:disable Style/Documentation
-# frozen_string_literal: true
-
 class PostsController < ApplicationController
   before_action :authenticate_user!
 
@@ -32,4 +29,3 @@ class PostsController < ApplicationController
     params.require(:post).permit(:content)
   end
 end
-# rubocop:enable Style/Documentation

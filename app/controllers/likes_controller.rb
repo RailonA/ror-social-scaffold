@@ -1,6 +1,3 @@
-# rubocop:disable Style/Documentation
-# frozen_string_literal: true
-
 class LikesController < ApplicationController
   def create
     @like = current_user.likes.new(post_id: params[:post_id])
@@ -22,4 +19,3 @@ class LikesController < ApplicationController
     end
   end
 end
-# rubocop:enable Style/Documentation

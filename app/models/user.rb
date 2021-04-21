@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-# rubocop:disable Style/Documentation
-
 # rubocop:disable Lint/RedundantCopDisableDirective
 
 # rubocop:disable Metrics/BlockLength
@@ -37,6 +33,5 @@ class User < ApplicationRecord
     end
   end
 end
-# rubocop:enable Style/Documentation
 # rubocop:enable Lint/RedundantCopDisableDirective
 # rubocop:enable Metrics/BlockLength

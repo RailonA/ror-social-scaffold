@@ -1,6 +1,3 @@
-# rubocop:disable Style/Documentation
-# frozen_string_literal: true
-
 class CreateComments < ActiveRecord::Migration[5.2]
   def change
     create_table :comments do |t|
@@ -14,4 +11,3 @@ class CreateComments < ActiveRecord::Migration[5.2]
     add_foreign_key :comments, :users, column: :user_id
   end
 end
-# rubocop:enable Style/Documentation
