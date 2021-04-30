@@ -1,0 +1,5 @@
+---
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_DEPLOYMENT: "false"
+BUNDLE_CLEAN: "true"
+BUNDLE_WITHOUT: "production"

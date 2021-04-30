@@ -1,7 +1,0 @@
-inherit_from: ./ruby-2.7.yml
-
-AllCops:
-  TargetRubyVersion: 2.5
-
-Style/SlicingWithRange:
-  Enabled: false
