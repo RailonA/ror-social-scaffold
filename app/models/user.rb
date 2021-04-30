@@ -1,6 +1,5 @@
 # rubocop:disable Lint/RedundantCopDisableDirective
 
-# rubocop:disable Metrics/BlockLength
 
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
@@ -34,4 +33,3 @@ class User < ApplicationRecord
   end
 end
 # rubocop:enable Lint/RedundantCopDisableDirective
-# rubocop:enable Metrics/BlockLength
