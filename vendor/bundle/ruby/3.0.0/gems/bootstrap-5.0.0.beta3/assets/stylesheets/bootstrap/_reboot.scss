@@ -1,13 +1,11 @@
 // stylelint-disable declaration-no-important, selector-no-qualifying-type, property-no-vendor-prefix
 
-
 // Reboot
 //
 // Normalization of HTML elements, manually forked from Normalize.css to remove
 // styles targeting irrelevant browsers while applying new styles.
 //
 // Normalize is licensed MIT. https://github.com/necolas/normalize.css
-
 
 // Document
 //
@@ -18,7 +16,6 @@
 *::after {
   box-sizing: border-box;
 }
-
 
 // Root
 //
@@ -35,7 +32,6 @@
   }
 }
 
-
 // Body
 //
 // 1. Remove the margin in all browsers.
@@ -46,7 +42,9 @@
 body {
   margin: 0; // 1
   font-family: $font-family-base;
+
   @include font-size($font-size-base);
+
   font-weight: $font-weight-base;
   line-height: $line-height-base;
   color: $body-color;
@@ -55,7 +53,6 @@ body {
   -webkit-text-size-adjust: 100%; // 3
   -webkit-tap-highlight-color: rgba($black, 0); // 4
 }
-
 
 // Content grouping
 //
@@ -73,7 +70,6 @@ hr {
 hr:not([size]) {
   height: $hr-height; // 2
 }
-
 
 // Typography
 //
@@ -93,34 +89,39 @@ hr:not([size]) {
 
 h1 {
   @extend %heading;
+
   @include font-size($h1-font-size);
 }
 
 h2 {
   @extend %heading;
+
   @include font-size($h2-font-size);
 }
 
 h3 {
   @extend %heading;
+
   @include font-size($h3-font-size);
 }
 
 h4 {
   @extend %heading;
+
   @include font-size($h4-font-size);
 }
 
 h5 {
   @extend %heading;
+
   @include font-size($h5-font-size);
 }
 
 h6 {
   @extend %heading;
+
   @include font-size($h6-font-size);
 }
-
 
 // Reset margins on paragraphs
 //
@@ -131,7 +132,6 @@ p {
   margin-top: 0;
   margin-bottom: $paragraph-margin-bottom;
 }
-
 
 // Abbreviations
 //
@@ -147,7 +147,6 @@ abbr[data-bs-original-title] { // 1
   text-decoration-skip-ink: none; // 4
 }
 
-
 // Address
 
 address {
@@ -155,7 +154,6 @@ address {
   font-style: normal;
   line-height: inherit;
 }
-
 
 // Lists
 
@@ -185,17 +183,15 @@ dt {
 // 1. Undo browser default
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: 0; // 1
 }
-
 
 // Blockquote
 
 blockquote {
   margin: 0 0 1rem;
 }
-
 
 // Strong
 //
@@ -206,7 +202,6 @@ strong {
   font-weight: $font-weight-bolder;
 }
 
-
 // Small
 //
 // Add the correct font size in all browsers
@@ -215,14 +210,12 @@ small {
   @include font-size($small-font-size);
 }
 
-
 // Mark
 
 mark {
   padding: $mark-padding;
   background-color: $mark-bg;
 }
-
 
 // Sub and Sup
 //
@@ -232,14 +225,15 @@ mark {
 sub,
 sup {
   position: relative;
+
   @include font-size($sub-sup-font-size);
+
   line-height: 0;
   vertical-align: baseline;
 }
 
-sub { bottom: -.25em; }
-sup { top: -.5em; }
-
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
 
 // Links
 
@@ -266,7 +260,6 @@ a:not([href]):not([class]) {
   }
 }
 
-
 // Code
 
 pre,
@@ -274,7 +267,9 @@ code,
 kbd,
 samp {
   font-family: $font-family-code;
+
   @include font-size(1em); // Correct the odd `em` font sizing in all browsers.
+
   direction: ltr #{"/* rtl:ignore */"};
   unicode-bidi: bidi-override;
 }
@@ -288,12 +283,15 @@ pre {
   margin-top: 0; // 1
   margin-bottom: 1rem; // 2
   overflow: auto; // 3
+
   @include font-size($code-font-size);
+
   color: $pre-color;
 
   // Account for some code outputs that place code tags in pre tags
   code {
     @include font-size(inherit);
+
     color: inherit;
     word-break: normal;
   }
@@ -301,6 +299,7 @@ pre {
 
 code {
   @include font-size($code-font-size);
+
   color: $code-color;
   word-wrap: break-word;
 
@@ -312,18 +311,22 @@ code {
 
 kbd {
   padding: $kbd-padding-y $kbd-padding-x;
+
   @include font-size($kbd-font-size);
+
   color: $kbd-color;
   background-color: $kbd-bg;
+
   @include border-radius($border-radius-sm);
 
   kbd {
     padding: 0;
+
     @include font-size(1em);
+
     font-weight: $nested-kbd-font-weight;
   }
 }
-
 
 // Figures
 //
@@ -333,14 +336,12 @@ figure {
   margin: 0 0 1rem;
 }
 
-
 // Images and content
 
 img,
 svg {
   vertical-align: middle;
 }
-
 
 // Tables
 //
@@ -379,7 +380,6 @@ th {
   border-width: 0;
 }
 
-
 // Forms
 //
 // 1. Allow labels to use `margin` for spacing.
@@ -414,7 +414,9 @@ optgroup,
 textarea {
   margin: 0; // 1
   font-family: inherit;
+
   @include font-size(inherit);
+
   line-height: inherit;
 }
 
@@ -503,7 +505,9 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: $legend-margin-bottom;
+
   @include font-size($legend-font-size);
+
   font-weight: $legend-font-weight;
   line-height: inherit;
 
@@ -566,7 +570,6 @@ legend {
   padding: 0;
 }
 
-
 // Inherit font family and line height for file input buttons
 
 ::file-selector-button {
@@ -602,7 +605,6 @@ summary {
   cursor: pointer;
 }
 
-
 // Progress
 //
 // Add the correct vertical alignment in Chrome, Firefox, and Opera.
@@ -610,7 +612,6 @@ summary {
 progress {
   vertical-align: baseline;
 }
-
 
 // Hidden attribute
 //

@@ -8,7 +8,9 @@
   width: 100%;
   padding: $form-select-padding-y $form-select-indicator-padding $form-select-padding-y $form-select-padding-x;
   font-family: $form-select-font-family;
+
   @include font-size($form-select-font-size);
+
   font-weight: $form-select-font-weight;
   line-height: $form-select-line-height;
   color: $form-select-color;
@@ -18,16 +20,21 @@
   background-position: $form-select-bg-position;
   background-size: $form-select-bg-size;
   border: $form-select-border-width solid $form-select-border-color;
+
   @include border-radius($form-select-border-radius, 0);
   @include box-shadow($form-select-box-shadow);
+
   appearance: none;
 
   &:focus {
     border-color: $form-select-focus-border-color;
     outline: 0;
+
     @if $enable-shadows {
       @include box-shadow($form-select-box-shadow, $form-select-focus-box-shadow);
-    } @else {
+    }
+
+    @else {
       // Avoid using mixin so we can pass custom focus shadow properly
       box-shadow: $form-select-focus-box-shadow;
     }
@@ -56,6 +63,7 @@
   padding-top: $form-select-padding-y-sm;
   padding-bottom: $form-select-padding-y-sm;
   padding-left: $form-select-padding-x-sm;
+
   @include font-size($form-select-font-size-sm);
 }
 
@@ -63,5 +71,6 @@
   padding-top: $form-select-padding-y-lg;
   padding-bottom: $form-select-padding-y-lg;
   padding-left: $form-select-padding-x-lg;
+
   @include font-size($form-select-font-size-lg);
 }

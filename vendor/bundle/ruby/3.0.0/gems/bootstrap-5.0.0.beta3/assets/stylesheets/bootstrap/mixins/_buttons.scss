@@ -19,26 +19,36 @@
   $disabled-color: color-contrast($disabled-background)
 ) {
   color: $color;
+
   @include gradient-bg($background);
+
   border-color: $border;
+
   @include box-shadow($btn-box-shadow);
 
   &:hover {
     color: $hover-color;
+
     @include gradient-bg($hover-background);
+
     border-color: $hover-border;
   }
 
   .btn-check:focus + &,
   &:focus {
     color: $hover-color;
+
     @include gradient-bg($hover-background);
+
     border-color: $hover-border;
+
     @if $enable-shadows {
-      @include box-shadow($btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5));
-    } @else {
+      @include box-shadow($btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), 0.5));
+    }
+
+    @else {
       // Avoid using mixin so we can pass custom focus shadow properly
-      box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5);
+      box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), 0.5);
     }
   }
 
@@ -55,10 +65,12 @@
 
     &:focus {
       @if $enable-shadows {
-        @include box-shadow($btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5));
-      } @else {
+        @include box-shadow($btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), 0.5));
+      }
+
+      @else {
         // Avoid using mixin so we can pass custom focus shadow properly
-        box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5);
+        box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), 0.5);
       }
     }
   }
@@ -93,7 +105,7 @@
 
   .btn-check:focus + &,
   &:focus {
-    box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
+    box-shadow: 0 0 0 $btn-focus-width rgba($color, 0.5);
   }
 
   .btn-check:checked + &,
@@ -107,10 +119,12 @@
 
     &:focus {
       @if $enable-shadows {
-        @include box-shadow($btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($color, .5));
-      } @else {
+        @include box-shadow($btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($color, 0.5));
+      }
+
+      @else {
         // Avoid using mixin so we can pass custom focus shadow properly
-        box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
+        box-shadow: 0 0 0 $btn-focus-width rgba($color, 0.5);
       }
     }
   }
@@ -126,6 +140,7 @@
 // scss-docs-start btn-size-mixin
 @mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
   padding: $padding-y $padding-x;
+
   @include font-size($font-size);
   // Manually declare to provide an override to the browser default
   @include border-radius($border-radius, 0);

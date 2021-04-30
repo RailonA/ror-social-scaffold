@@ -4,13 +4,13 @@
   box-shadow: $dx $dy $radius $color;
 }
 
-$anchorColor: #0077cc;
+$anchorColor: #07c;
 $buttonBorderColor: #888;
 $numberColor: #111;
 $textColor: #555;
 $mutedColor: #767676;
-$normalFonts: Helvetica, Arial, sans-serif;
-$codeFonts: Consolas, monospace, serif;
+$normalFonts: helvetica, arial, sans-serif;
+$codeFonts: consolas, monospace, serif;
 $zindex: 2147483640; // near 32bit max 2147483647
 
 // do some resets
@@ -41,21 +41,26 @@ $zindex: 2147483640; // near 32bit max 2147483647
     overflow: visible;
     max-height: none;
   }
+
   table {
     border-collapse: collapse;
     border-spacing: 0;
   }
+
   a,
   a:hover {
     cursor: pointer;
     color: $anchorColor;
   }
+
   a {
     text-decoration: none;
+
     &:hover {
       text-decoration: underline;
     }
   }
+
   .custom-fields-title {
     color: $textColor;
     font: $normalFonts;
@@ -68,12 +73,15 @@ $zindex: 2147483640; // near 32bit max 2147483647
   .profiler-toggle-duration-with-children {
     float: right;
   }
+
   .profiler-snapshots-page-link {
     float: left;
   }
+
   table.profiler-client-timings {
     margin-top: 10px;
   }
+
   font-family: $normalFonts;
 
   .profiler-label {
@@ -88,6 +96,7 @@ $zindex: 2147483640; // near 32bit max 2147483647
 
   .profiler-trivial {
     display: none;
+
     td,
     td * {
       color: $mutedColor !important;
@@ -107,9 +116,11 @@ $zindex: 2147483640; // near 32bit max 2147483647
 
   .profiler-info {
     text-align: right;
+
     .profiler-name {
       float: left;
     }
+
     .profiler-server-time {
       white-space: nowrap;
     }
@@ -121,29 +132,36 @@ $zindex: 2147483640; // near 32bit max 2147483647
       color: $mutedColor;
       text-align: right;
     }
+
     th,
     td {
       white-space: nowrap;
     }
+
     .profiler-duration-with-children {
       display: none;
     }
+
     .profiler-duration {
       color: $numberColor;
       text-align: right;
     }
+
     .profiler-indent {
       letter-spacing: 4px;
     }
+
     .profiler-queries-show {
       .profiler-number,
       .profiler-unit {
         color: $anchorColor;
       }
     }
+
     .profiler-queries-duration {
       padding-left: 6px;
     }
+
     .profiler-percent-in-sql {
       white-space: nowrap;
       text-align: right;
@@ -161,8 +179,9 @@ $zindex: 2147483640; // near 32bit max 2147483647
 
           &:first-child {
             float: left;
-            margin-left: 0px;
+            margin-left: 0;
           }
+
           &.profiler-custom-link {
             float: left;
           }
@@ -184,6 +203,7 @@ $zindex: 2147483640; // near 32bit max 2147483647
 
     tr {
       background-color: #fff;
+
       &.higlight-animate {
         animation: highlight-in 3s;
       }
@@ -237,13 +257,16 @@ $zindex: 2147483640; // near 32bit max 2147483647
     .profiler-gap-info td {
       background-color: #ccc;
     }
+
     .profiler-gap-info {
       .profiler-unit {
         color: #777;
       }
+
       .profiler-info {
         text-align: right;
       }
+
       &.profiler-trivial-gaps {
         display: none;
       }
@@ -257,33 +280,43 @@ $zindex: 2147483640; // near 32bit max 2147483647
     .str {
       color: maroon;
     }
+
     .kwd {
       color: #00008b;
     }
+
     .com {
       color: gray;
     }
+
     .typ {
       color: #2b91af;
     }
+
     .lit {
       color: maroon;
     }
+
     .pun {
       color: #000;
     }
+
     .pln {
       color: #000;
     }
+
     .tag {
       color: maroon;
     }
+
     .atn {
       color: red;
     }
+
     .atv {
       color: blue;
     }
+
     .dec {
       color: purple;
     }
@@ -295,6 +328,7 @@ $zindex: 2147483640; // near 32bit max 2147483647
   .profiler-warning .profiler-queries-show .profiler-unit {
     // i'm no good at css
     color: #f00;
+
     &:hover {
       color: #f00;
     }
@@ -302,9 +336,11 @@ $zindex: 2147483640; // near 32bit max 2147483647
 
   .profiler-nuclear {
     color: #f00;
+
     &:hover {
       color: #f00;
     }
+
     font-weight: bold;
     padding-right: 2px;
   }
@@ -318,10 +354,10 @@ $zindex: 2147483640; // near 32bit max 2147483647
   $radius: 10px;
 
   &.profiler-top {
-    top: 0px;
+    top: 0;
 
     &.profiler-left {
-      left: 0px;
+      left: 0;
 
       &.profiler-no-controls .profiler-totals,
       &.profiler-no-controls .profiler-result:last-child .profiler-button,
@@ -338,7 +374,7 @@ $zindex: 2147483640; // near 32bit max 2147483647
     }
 
     &.profiler-right {
-      right: 0px;
+      right: 0;
 
       &.profiler-no-controls .profiler-totals,
       &.profiler-no-controls .profiler-result:last-child .profiler-button,
@@ -356,10 +392,10 @@ $zindex: 2147483640; // near 32bit max 2147483647
   }
 
   &.profiler-bottom {
-    bottom: 0px;
+    bottom: 0;
 
     &.profiler-left {
-      left: 0px;
+      left: 0;
 
       &.profiler-no-controls .profiler-totals,
       &.profiler-no-controls .profiler-result:first-child .profiler-button,
@@ -376,7 +412,7 @@ $zindex: 2147483640; // near 32bit max 2147483647
     }
 
     &.profiler-right {
-      right: 0px;
+      right: 0;
 
       &.profiler-no-controls .profiler-totals,
       &.profiler-no-controls .profiler-result:first-child .profiler-button,
@@ -411,6 +447,7 @@ $zindex: 2147483640; // near 32bit max 2147483647
         color: #fff;
         font-weight: bold;
       }
+
       .profiler-unit {
         color: #fff;
         font-weight: normal;
@@ -423,7 +460,8 @@ $zindex: 2147483640; // near 32bit max 2147483647
       font-family: $codeFonts;
       font-size: 10px;
       margin-left: 6px;
-      &:before {
+
+      &::before {
         font-family: $codeFonts;
         content: "×";
         margin-right: 1px;
@@ -461,7 +499,7 @@ $zindex: 2147483640; // near 32bit max 2147483647
     line-height: 18px;
     overflow: auto;
 
-    @include box-shadow(0px, 1px, 15px, $textColor);
+    @include box-shadow(0, 1px, 15px, $textColor);
 
     .profiler-info {
       margin-bottom: 3px;
@@ -471,10 +509,12 @@ $zindex: 2147483640; // near 32bit max 2147483647
       .profiler-name {
         font-size: 110%;
         font-weight: bold;
+
         .profiler-overall-duration {
           display: none;
         }
       }
+
       .profiler-server-time {
         font-size: 95%;
       }
@@ -521,8 +561,8 @@ $zindex: 2147483640; // near 32bit max 2147483647
 
   &.profiler-min .profiler-controls .profiler-min-max {
     border-right: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   .profiler-more-actions {
@@ -541,8 +581,8 @@ $zindex: 2147483640; // near 32bit max 2147483647
   background: #000;
   opacity: 0.7;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   min-width: 100%;
 }
 
@@ -576,9 +616,11 @@ $zindex: 2147483640; // near 32bit max 2147483647
           padding-left: 8px;
           padding-right: 8px;
         }
+
         th {
           padding-bottom: 7px;
         }
+
         td {
           font-size: 14px;
           padding-bottom: 4px;
@@ -596,9 +638,11 @@ $zindex: 2147483640; // near 32bit max 2147483647
 
     .profiler-queries {
       margin: 25px 0;
+
       table {
         width: 100%;
       }
+
       th {
         font-size: 16px;
         color: $textColor;
@@ -620,8 +664,9 @@ $zindex: 2147483640; // near 32bit max 2147483647
 
 @keyframes highlight-in {
   0% {
-    background: #ffffbb;
+    background: #ffb;
   }
+
   100% {
     background: #fff;
   }
@@ -634,17 +679,21 @@ $zindex: 2147483640; // near 32bit max 2147483647
   .snapshots-table {
     thead {
       background: #6a737c;
-      color: #ffffff;
+      color: #fff;
     }
-    th, td {
+
+    th,
+    td {
       padding: 5px 10px;
       box-sizing: border-box;
+
       &:not(.request-group) {
         text-align: center;
       }
     }
+
     th {
-      border-right: 1px solid #ffffff;
+      border-right: 1px solid #fff;
     }
   }
 }

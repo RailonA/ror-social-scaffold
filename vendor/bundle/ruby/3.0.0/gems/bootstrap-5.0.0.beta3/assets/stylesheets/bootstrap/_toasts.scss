@@ -1,13 +1,16 @@
 .toast {
   width: $toast-max-width;
   max-width: 100%;
+
   @include font-size($toast-font-size);
+
   color: $toast-color;
   pointer-events: auto;
   background-color: $toast-background-color;
   background-clip: padding-box;
   border: $toast-border-width solid $toast-border-color;
   box-shadow: $toast-box-shadow;
+
   @include border-radius($toast-border-radius);
 
   &:not(.showing):not(.show) {
@@ -37,6 +40,7 @@
   background-color: $toast-header-background-color;
   background-clip: padding-box;
   border-bottom: $toast-border-width solid $toast-header-border-color;
+
   @include border-top-radius(subtract($toast-border-radius, $toast-border-width));
 
   .btn-close {

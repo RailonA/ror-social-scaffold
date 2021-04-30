@@ -9,6 +9,7 @@
   // No need to set list-style: none; since .list-group-item is block level
   padding-left: 0; // reset padding because ul and ol
   margin-bottom: 0;
+
   @include border-radius($list-group-border-radius);
 }
 
@@ -22,7 +23,6 @@
     counter-increment: section;
   }
 }
-
 
 // Interactive list items
 //
@@ -48,7 +48,6 @@
     background-color: $list-group-action-active-bg;
   }
 }
-
 
 // Individual list items
 //
@@ -96,7 +95,6 @@
   }
 }
 
-
 // Horizontal
 //
 // Change the layout of list group items from vertical (default) to horizontal.
@@ -137,7 +135,6 @@
   }
 }
 
-
 // Flush list items
 //
 // Remove borders and border-radius to keep list group items edge-to-edge. Most
@@ -155,7 +152,6 @@
   }
 }
 
-
 // scss-docs-start list-group-modifiers
 // List group contextual variants
 //
@@ -165,6 +161,7 @@
 @each $state, $value in $theme-colors {
   $list-group-background: shift-color($value, $list-group-item-bg-scale);
   $list-group-color: shift-color($value, $list-group-item-color-scale);
+
   @if (contrast-ratio($list-group-background, $list-group-color) < $min-contrast-ratio) {
     $list-group-color: mix($value, color-contrast($list-group-background), abs($alert-color-scale));
   }

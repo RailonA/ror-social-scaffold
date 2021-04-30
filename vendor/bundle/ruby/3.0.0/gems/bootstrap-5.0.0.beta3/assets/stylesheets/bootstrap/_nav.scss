@@ -14,10 +14,13 @@
 .nav-link {
   display: block;
   padding: $nav-link-padding-y $nav-link-padding-x;
+
   @include font-size($nav-link-font-size);
+
   font-weight: $nav-link-font-weight;
   color: $nav-link-color;
   text-decoration: if($link-decoration == none, null, none);
+
   @include transition($nav-link-transition);
 
   &:hover,
@@ -45,6 +48,7 @@
     margin-bottom: -$nav-tabs-border-width;
     background: none;
     border: $nav-tabs-border-width solid transparent;
+
     @include border-top-radius($nav-tabs-border-radius);
 
     &:hover,
@@ -76,7 +80,6 @@
   }
 }
 
-
 //
 // Pills
 //
@@ -85,16 +88,17 @@
   .nav-link {
     background: none;
     border: 0;
+
     @include border-radius($nav-pills-border-radius);
   }
 
   .nav-link.active,
   .show > .nav-link {
     color: $nav-pills-link-active-color;
+
     @include gradient-bg($nav-pills-link-active-bg);
   }
 }
-
 
 //
 // Justified variants
@@ -124,7 +128,6 @@
   }
 }
 
-
 // Tabbable tabs
 //
 // Hide tabbable panes to start, show them when `.active`
@@ -133,6 +136,7 @@
   > .tab-pane {
     display: none;
   }
+
   > .active {
     display: block;
   }

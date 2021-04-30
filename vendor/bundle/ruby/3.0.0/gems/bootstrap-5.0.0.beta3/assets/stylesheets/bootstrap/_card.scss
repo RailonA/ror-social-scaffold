@@ -12,6 +12,7 @@
   background-color: $card-bg;
   background-clip: border-box;
   border: $card-border-width solid $card-border-color;
+
   @include border-radius($card-border-radius);
 
   > hr {
@@ -25,11 +26,13 @@
 
     &:first-child {
       border-top-width: 0;
+
       @include border-top-radius($card-inner-border-radius);
     }
 
-    &:last-child  {
+    &:last-child {
       border-bottom-width: 0;
+
       @include border-bottom-radius($card-inner-border-radius);
     }
   }
@@ -100,7 +103,6 @@
   }
 }
 
-
 //
 // Header navs
 //
@@ -132,6 +134,7 @@
   bottom: 0;
   left: 0;
   padding: $card-img-overlay-padding;
+
   @include border-radius($card-inner-border-radius);
 }
 
@@ -150,7 +153,6 @@
 .card-img-bottom {
   @include border-bottom-radius($card-inner-border-radius);
 }
-
 
 //
 // Card groups
@@ -188,6 +190,7 @@
             // stylelint-disable-next-line property-disallowed-list
             border-top-right-radius: 0;
           }
+
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-disallowed-list
@@ -203,6 +206,7 @@
             // stylelint-disable-next-line property-disallowed-list
             border-top-left-radius: 0;
           }
+
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-disallowed-list

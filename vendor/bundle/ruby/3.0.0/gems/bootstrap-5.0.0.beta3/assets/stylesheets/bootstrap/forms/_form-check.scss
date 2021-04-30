@@ -26,6 +26,7 @@
   border: $form-check-input-border;
   appearance: none;
   color-adjust: exact; // Keep themed appearance for print
+
   @include transition($form-check-transition);
 
   &[type="checkbox"] {
@@ -54,7 +55,9 @@
     &[type="checkbox"] {
       @if $enable-gradients {
         background-image: escape-svg($form-check-input-checked-bg-image), var(--#{$variable-prefix}gradient);
-      } @else {
+      }
+
+      @else {
         background-image: escape-svg($form-check-input-checked-bg-image);
       }
     }
@@ -62,7 +65,9 @@
     &[type="radio"] {
       @if $enable-gradients {
         background-image: escape-svg($form-check-radio-checked-bg-image), var(--#{$variable-prefix}gradient);
-      } @else {
+      }
+
+      @else {
         background-image: escape-svg($form-check-radio-checked-bg-image);
       }
     }
@@ -74,7 +79,9 @@
 
     @if $enable-gradients {
       background-image: escape-svg($form-check-input-indeterminate-bg-image), var(--#{$variable-prefix}gradient);
-    } @else {
+    }
+
+    @else {
       background-image: escape-svg($form-check-input-indeterminate-bg-image);
     }
   }
@@ -112,6 +119,7 @@
     margin-left: $form-switch-padding-start * -1;
     background-image: escape-svg($form-switch-bg-image);
     background-position: left center;
+
     @include border-radius($form-switch-border-radius);
     @include transition($form-switch-transition);
 
@@ -124,7 +132,9 @@
 
       @if $enable-gradients {
         background-image: escape-svg($form-switch-checked-bg-image), var(--#{$variable-prefix}gradient);
-      } @else {
+      }
+
+      @else {
         background-image: escape-svg($form-switch-checked-bg-image);
       }
     }

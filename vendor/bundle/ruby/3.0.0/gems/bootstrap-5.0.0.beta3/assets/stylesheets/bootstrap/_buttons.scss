@@ -16,6 +16,7 @@
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
+
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
   @include transition($btn-transition);
 
@@ -46,10 +47,10 @@
   fieldset:disabled & {
     pointer-events: none;
     opacity: $btn-disabled-opacity;
+
     @include box-shadow(none);
   }
 }
-
 
 //
 // Alternate buttons
@@ -68,7 +69,6 @@
   }
 }
 // scss-docs-end btn-variant-loops
-
 
 //
 // Link buttons
@@ -96,7 +96,6 @@
 
   // No need for an active state here
 }
-
 
 //
 // Button Sizes
