@@ -1,0 +1,29 @@
+<div>
+  <h2>You have <%= pluralize(current_user.friends.count, 'friend')%> </h2>
+  <% current_user.friends.each do |user|%>
+    <table class = 'table'>
+      <thead>
+        <tr>
+          <th scope="col">
+            <%= link_to user_path(user)do%>
+              <h2  class = 'username'>[ <%= user.name%> ]</h2>
+            <%end%>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td>
+            <%= link_to 'See Profile',  user_path(user), class:"profile"%>
+          </td>
+          <td>
+          <div class = ' profile'>
+            <%= render_friendship_btn user%>
+          </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr class = 'hr'>
+  <%end%>
+</div>
