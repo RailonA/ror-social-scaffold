@@ -1,0 +1,15 @@
+current directory: /home/railon/Projects/Odin_On_Rails/stay-in-touch/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+/home/railon/.rbenv/versions/2.7.0/bin/ruby -I /home/railon/.rbenv/versions/2.7.0/lib/ruby/site_ruby/2.7.0 -r ./siteconf20210415-15499-1ptekys.rb extconf.rb
+creating Makefile
+
+current directory: /home/railon/Projects/Odin_On_Rails/stay-in-touch/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make DESTDIR\= clean
+
+current directory: /home/railon/Projects/Odin_On_Rails/stay-in-touch/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make DESTDIR\=
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/railon/Projects/Odin_On_Rails/stay-in-touch/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20210415-15499-ocbuqs

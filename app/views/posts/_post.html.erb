@@ -1,11 +1,12 @@
 <li class="post">
   <div>
     <div class='post-attribution' >
-      <%= link_to post.user.name, user_path(post.user), class: 'post-author' %>
+      <%= link_to post.user.name, user_path(post.user), class: 'post-author btn btn-outline-success text-dark' %>
     </div>
     <div class='post-liking'>
-      <span class='post-date'> <%= post.created_at.strftime("%Y/%m/%d") %> </span>
+      <span> <%= post.created_at.strftime("%Y/%m/%d") %> </span>
       <%= like_or_dislike_btn(post) %>
+      <span class="likescount"><%= post.likes.count %></span>
     </div>
   </div>
   <p class="post-content">
@@ -14,7 +15,6 @@
 
   <div class='post-comments-section'>
     <%= render partial: 'comments/comment', collection: post.comments %>
-
     <%= form_for(post.comments.new, url: post_comments_path(post)) do |form| %>
       <%= form.text_field :content, id: :comment_content, class: 'form-control', placeholder: 'Add new Comment' %>
       <%= form.submit 'Comment', class: 'btn btn-secondary' %>
